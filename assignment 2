@@ -1,10 +1,12 @@
-M=int(input("enter M="))
-N=int(input("enter N="))
+binary1 = input("Enter the first binary number: ")
+binary2 = input("Enter the second binary number: ")
+binary3 = input("Enter the third binary number: ")
 
-for num in range(M,N+1):
-    if num>1:
-        for i in range(2,num):
-            if (num%i)==0:
-                break
-            else:
-                print(num)
+decimal1 = int(binary1, 2)
+decimal2 = int(binary2, 2)
+decimal3 = int(binary3, 2)
+
+greatest_decimal = max(decimal1, decimal2, decimal3)
+greatest_binary = bin(greatest_decimal)[2:]
+
+print("The greatest binary number is:", greatest_binary)
