@@ -1,0 +1,22 @@
+word = input("Enter a word: ")
+vowel_count = 0
+consonant_count = 0
+vowels = []
+consonants = []
+for letter in word:
+    if letter.lower() in "aeiou"vowel_count += 1
+        vowels.append(letter)
+    else:
+       consonant_count += 1
+        consonants.append(letter)
+vowels.sort()
+consonants.sort()
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+
+if vowel_count > consonant_count:
+    print("Vowels have more characters.")
+elif consonant_count > vowel_count:
+    print("Consonants have more characters.")
+else:
+    print("The number of vowels and consonants is equal.")
