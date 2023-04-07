@@ -1,0 +1,21 @@
+def merge_strings (s1, s2):
+    merged = "" 
+    for i in range (max (len (s1), len(s2))):
+        if i < len (sl):
+            merged + s1[1]
+        if i < len (s2):
+            merged += s2 [1]
+    return merged
+def count_vowels (s): 
+    vowels="aeiouAEIOU"
+    count = 0 
+    for char in s:
+        if char in vowels:
+            count += 1 
+    return count
+s1 = input ("Enter the string 1:") 
+s2 = input ("Enter the string 2:")
+merged = merge_strings (s1, s2)
+print (merged)
+Vowel_count = count_vowels (merged)
+print (vowel_count)
