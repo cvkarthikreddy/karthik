@@ -1,0 +1,6 @@
+num = int(input("Enter a number "))
+num_str = str(num)
+lsb = num_str[-1]
+msb = num_str[0]
+print("LSB:", lsb)
+print("MSB:", msb)
