@@ -1,0 +1,7 @@
+n = int(input("Enter the number of elements in list: "))
+lst = []
+for i in range(n):
+    lst.append(int(input(f"Enter element{i+1}: ")))
+
+lst = list(set(lst))
+print(lst)
